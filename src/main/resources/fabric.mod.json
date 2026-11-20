@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "money",
+  "version": "${version}",
+  "name": "Money",
+  "description": "Money (Aesir Para + Auto TPA). Gaks_v310 Tarafindan Yapilmistir.",
+  "authors": ["Gaks_v310"],
+  "environment": "client",
+  "mixins": ["money.mixins.json", "aesirpara.mixins.json"],
+  "entrypoints": {
+    "client": [
+      "com.example.money.Money",
+      "com.example.aesirpara.AesirPara"
+    ]
+  },
+  "depends": { "fabricloader": ">=0.16.0", "minecraft": "~1.21.11", "java": ">=21", "fabric-api": "*" }
+}
